@@ -3,12 +3,12 @@
 
 ### Installation
 
-- Clone Project
+- Clone Project <br>
   `git clone https://github.com/zzlalani/products_test.git`
-- Docker up the project
-  `docker-compose up -d`
+- Docker up the project<br>
+  `docker-compose up -d`<br>
   -- Please note it will take some time to build the project for the first time
-- Login into the webserver docker container `7.2.x-webserver`
+- Login into the webserver docker container `7.2.x-webserver` <br>
   `docker exec -it 7.2.x-webserver /bin/bash`
 - and run the following commands to setup Laravel application
   ```sh
@@ -21,26 +21,26 @@
 - check `http://localhost/` to see if the app is up and running
  
 ### Setup Passport
-- Generate Passport Encryption keys for Authorization  
-`php artisan passport:install`
+- Generate Passport Encryption keys for Authorization <br> 
+`php artisan passport:install`<br>
 --- Copy generated Client ID and Client secret that will be used to authorized clients
 
 ### Routes
-- Get all products
+- Get all products<br>
   `http://localhost/products?max=10&page=1`
-- Get a product
-  `http://localhost/products/<product_id>`
-- Login and get Authentication Token
-  `http://localhost/auth/token`
-  **username: admin@test.com** 
-  **password: admin** 
-  **grant_type: password**
-  **client_id: 2**
-  **client_secret: <generate Client Secret in above passport setup>**
-- Post a product
+- Get a product<br>
+  `http://localhost/products/< product_id >`
+- Login and get Authentication Token<br>
+  `http://localhost/auth/token`<br>
+  **username: admin@test.com** <br>
+  **password: admin** <br>
+  **grant_type: password**<br>
+  **client_id: 2**<br>
+  **client_secret: < generate Client Secret in above passport setup > **<br>
+- Post a product<br>
   `http://localhost/products`
-  --- Use Header
-  `Authorization: Bearer <TOKEN GENERATE>`
+  --- Use Header<br>
+  `Authorization: Bearer < TOKEN GENERATE >`<br>
 ## Test
 - Exit the Docker container and run following command in app
   ```sh

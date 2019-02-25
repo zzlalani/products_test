@@ -29,18 +29,18 @@
 - Get all products<br>
   `http://localhost/products?max=10&page=1`
 - Get a product<br>
-  `http://localhost/products/< product_id >`
+  `http://localhost/products/<product_id>`
 - Login and get Authentication Token<br>
   `http://localhost/auth/token`<br>
   **username: admin@test.com** <br>
   **password: admin** <br>
-  **grant_type: password**<br>
-  **client_id: 2**<br>
-  **client_secret: < generate Client Secret in above passport setup > **<br>
+  **grant_type: password** <br>
+  **client_id: 2** <br>
+  **client_secret: GENERATE Client Secret ** <br>
 - Post a product<br>
-  `http://localhost/products`
+  `http://localhost/products`<br>
   --- Use Header<br>
-  `Authorization: Bearer < TOKEN GENERATE >`<br>
+  `Authorization: Bearer <TOKEN GENERATE>`<br>
 ## Test
 - Exit the Docker container and run following command in app
   ```sh

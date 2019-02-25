@@ -36,7 +36,7 @@
   **password: admin** <br>
   **grant_type: password** <br>
   **client_id: 2** <br>
-  **client_secret: GENERATE Client Secret ** <br>
+  **client_secret: &lt;GENERATE Client Secret&gt;** <br>
 - Post a product<br>
   `http://localhost/products`<br>
   --- Use Header<br>
